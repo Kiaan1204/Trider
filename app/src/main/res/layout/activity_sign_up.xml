@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--THIS IS THE SIGNUP LAYOUT-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Black"
+    tools:context=".SignUpActivity">
+<!--THIS IS THE EDIT TEXT FOR THE EMAIL-->
+    <EditText
+        android:id="@+id/EmailEditText"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="58dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/Orange"
+        android:ems="10"
+        android:hint="E-MAIL*"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/Black"
+        app:layout_constraintBottom_toTopOf="@+id/PasswordEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+<!--THIS IS THE PHONE NUMBER EDITTEXT-->
+    <EditText
+        android:id="@+id/PhoneEditText"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="180dp"
+        android:background="@color/Orange"
+        android:ems="10"
+        android:hint="PHONE NUMBER"
+        android:inputType="phone"
+        android:textColor="@color/Black"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="HardcodedText" />
+<!--THIS IS A CONFIRM PASSWORD EDITTEXT-->
+    <EditText
+        android:id="@+id/ConfirmPasswordEditText"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/Orange"
+        android:ems="10"
+        android:hint="CONFIRM PASSWORD*"
+        android:inputType="textPassword"
+        android:textColor="@color/Black"
+        app:layout_constraintBottom_toTopOf="@+id/NameEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+<!--THIS IS A PASSWORD EDITTEXT-->
+    <EditText
+        android:id="@+id/PasswordEditText"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/Orange"
+        android:ems="10"
+        android:hint="PASSWORD*"
+        android:inputType="textPassword"
+        android:textColor="@color/Black"
+        app:layout_constraintBottom_toTopOf="@+id/ConfirmPasswordEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+<!--THIS IS A NAME EDITTEXT-->
+    <EditText
+        android:id="@+id/NameEditText"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/Orange"
+        android:ems="10"
+        android:hint="NAME*"
+        android:inputType="textPersonName"
+        android:textColor="@color/Black"
+        app:layout_constraintBottom_toTopOf="@+id/PhoneEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="HardcodedText" />
+<!--    THIS IS SIGNUP BUTTON-->
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="48dp"
+        android:onClick="SignUp"
+        android:text="SIGN UP"
+        android:background="@color/Orange"
+        android:textColor="@color/Black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+<!--THIS IS A TEXTVIEW-->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="104dp"
+        android:layout_marginEnd="265dp"
+        android:text="*REQUIRED"
+        android:textColor="@color/Orange"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

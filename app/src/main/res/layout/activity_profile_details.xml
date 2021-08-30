@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--THIS IS THE ICON SELECT LAYOUT-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Black"
+    tools:context=".ProfileDetailsActivity">
+<!--THE BELOW IMAGEVIEWS ARE TO SELECT THE USER'S ICON-->
+    <ImageView
+        android:id="@+id/green"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        app:layout_constraintBottom_toTopOf="@+id/violet"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/yellow"
+        app:srcCompat="@drawable/bikegreen" />
+
+    <ImageView
+        android:id="@+id/red"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/green"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bikered" />
+
+    <ImageView
+        android:id="@+id/yellow"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        app:layout_constraintBottom_toTopOf="@+id/blue"
+        app:layout_constraintEnd_toStartOf="@+id/green"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/bikeyellow" />
+
+    <ImageView
+        android:id="@+id/violet"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/blue"
+        app:srcCompat="@drawable/bikeviolet" />
+
+    <ImageView
+        android:id="@+id/black"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/yellow"
+        app:layout_constraintEnd_toStartOf="@+id/red"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bikeblack" />
+
+    <ImageView
+        android:id="@+id/blue"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/violet"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/bikeblue" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="205dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--THIS IS THE NEW EVENT LAYOUT-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Black"
+    tools:context=".NewEventActivity">
+<!--THIS IS A BUTTON-->
+    <Button
+        android:id="@+id/saveDetailsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:background="@color/Orange"
+        android:textColor="@color/Black"
+        android:text="SAVE DETAILS"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+<!--THIS IS A BUTTON-->
+    <Button
+        android:id="@+id/updateDetailsbutton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:background="@color/Orange"
+        android:textColor="@color/Black"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="84dp"
+
+        android:text="UPDATE DETAILS"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eventTime" />
+<!--THIS IS AN EDIT TEXT FOR THE PLACE NAME-->
+    <EditText
+        android:id="@+id/placeName"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/Orange"
+        android:ems="10"
+        android:hint="END LOCATION NAME"
+        android:inputType="textPersonName"
+        android:text="END LOCATION NAME"
+        android:textColor="@color/Black"
+        app:layout_constraintBottom_toTopOf="@+id/startLocal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+<!--THIS IS AN EDITTEXT FOR THE EVENT DATE-->
+    <EditText
+        android:id="@+id/eventDate"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/Orange"
+        android:ems="10"
+        android:hint="EVENT DATE"
+        android:inputType="date"
+        android:text="EVENT DATE"
+        android:textColor="@color/Black"
+        app:layout_constraintBottom_toTopOf="@+id/eventTime"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+<!--THIS IS THE EDITTEXT FOR AN EVENT NAME-->
+    <EditText
+        android:id="@+id/EventName"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/Orange"
+        android:ems="10"
+        android:hint="EVENT NAME"
+        android:inputType="textPersonName"
+        android:textColor="@color/Black"
+        app:layout_constraintBottom_toTopOf="@+id/placeName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+<!--THIS IS THE EDIT TEXT FOR AN EVENT TIME-->
+    <EditText
+        android:id="@+id/eventTime"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="140dp"
+        android:background="@color/Orange"
+        android:ems="10"
+        android:hint="EVENT TIME"
+        android:inputType="time"
+        android:text="EVENT TIME"
+        android:textColor="@color/Black"
+        app:layout_constraintBottom_toTopOf="@+id/saveDetailsButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+<!--THIS IS THE EDIT TEXT FOR THE START LOCATION-->
+    <EditText
+        android:id="@+id/startLocal"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/Orange"
+        android:ems="10"
+        android:hint="START LOCATION NAME"
+        android:inputType="textPersonName"
+        android:text="START LOCATION NAME"
+        android:textColor="@color/Black"
+        app:layout_constraintBottom_toTopOf="@+id/eventDate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+<!--THIS IS A BUTTON-->
+    <Button
+        android:id="@+id/DeleteEventButton"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="134dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="84dp"
+        android:background="@color/Orange"
+        android:text="DELETE EVENT"
+        android:textColor="@color/Black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/updateDetailsbutton"
+        app:layout_constraintTop_toBottomOf="@+id/eventTime" />
+<!--THIS IS A BUTTON-->
+    <Button
+        android:id="@+id/JoinEventButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginEnd="307dp"
+        android:layout_marginBottom="38dp"
+        android:background="@color/Orange"
+        android:text="JOIN"
+        android:textColor="@color/Black"
+        app:layout_constraintBottom_toTopOf="@+id/EventName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

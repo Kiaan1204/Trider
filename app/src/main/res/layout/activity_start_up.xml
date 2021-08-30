@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--THIS IS FOR THE START UP SCREEN LAYOUT-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Black"
+    tools:context=".StartUpActivity">
+
+<!-- THIS IS A BUTTON  -->
+    <Button
+        android:id="@+id/button"
+        android:layout_width="88dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="62dp"
+        android:background="@color/Orange"
+        android:textColor="@color/Black"
+        android:layout_marginTop="487dp"
+        android:layout_marginBottom="311dp"
+        android:onClick="LoginPage"
+        android:text="LOGIN"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button2"
+        app:layout_constraintHorizontal_bias="0.018"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.502" />
+<!--THIS IS A BUTTON-->
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="88dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="487dp"
+        android:layout_marginEnd="62dp"
+        android:layout_marginBottom="311dp"
+        android:onClick="SignUpPage"
+        android:background="@color/Orange"
+        android:textColor="@color/Black"
+        android:text="SIGNUP"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+<!--THIS IS A IMAGE-->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="237dp"
+        android:layout_height="250dp"
+        android:background="@color/Orange"
+        android:textColor="@color/Black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.168"
+        app:srcCompat="@drawable/triderlogo"/>
+<!--THIS IS A TEXTVIEW-->
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:text="KIAAN UPAMANYU"
+        android:textColor="@color/Orange"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

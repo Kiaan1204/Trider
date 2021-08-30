@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--THIS IS THE HOME LAYOUT-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Black"
+    tools:context=".HomeActivity">
+<!--THIS IS A TEXTVIEW FOR THE NAME OF THE CURRENTLY LOGGED IN USER-->
+    <TextView
+        android:id="@+id/NameTextView"
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="241dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="447dp"
+        android:textColor="@color/Orange"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:autoSizeMinTextSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.278" />
+<!--THIS IS AN IMAGE OF THE ICON OF THE USER-->
+    <ImageView
+        android:id="@+id/ProfileimageView"
+        android:layout_width="157dp"
+        android:layout_height="152dp"
+        android:layout_marginTop="62dp"
+        android:layout_marginBottom="31dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/bikeblack"
+        app:layout_constraintBottom_toTopOf="@+id/NameTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.805" />
+<!--THIS IS A REFRESH BUTTON-->
+    <ImageButton
+        android:id="@+id/btn_refresh"
+        android:layout_width="76dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/Orange"
+        android:src="@drawable/ic_baseline_refresh_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
