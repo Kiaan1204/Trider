@@ -510,7 +510,7 @@ package com.kiaan.trider;
             {
                 mGeoApiContext =new GeoApiContext.
                         Builder().
-                        apiKey("AIzaSyCqxRIstKsdm-Z_ujg-b61kc8Dv2UQFKHY")
+                        apiKey("@string/google_maps_api_key")
                         .build();
             }
 
